@@ -1,0 +1,4245 @@
+{
+  "description": "Synthetic CloudWatch logs for tracer testing. Contains 2 hours of normal traffic with a planted NullPointerException incident in the last 10 minutes.",
+  "events": [
+    {
+      "offset_seconds": 0,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": 0,
+      "message": "DEBUG Connection pool stats active=5 idle=12",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -8,
+      "message": "INFO Request completed status=200 latency_ms=82",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -19,
+      "message": "INFO Cache hit key=offer:2cb5b474-52e0-41e0-a291-d6f43f6a0c65",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -23,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_126225",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -30,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -31,
+      "message": "ERROR Request completed status=500 latency_ms=6503",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -33,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_872246",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -51,
+      "message": "INFO Request completed status=200 latency_ms=159",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -60,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -60,
+      "message": "INFO Request completed status=200 latency_ms=43",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -61,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_542417",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -71,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -90,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -90,
+      "message": "INFO Request completed status=200 latency_ms=163",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -109,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_629903",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -110,
+      "message": "ERROR java.lang.NullPointerException: customerSegment is null",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -120,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -121,
+      "message": "INFO Cache hit key=offer:b995db36-5472-4315-b254-55a9ac096ce9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -137,
+      "message": "INFO Request completed status=200 latency_ms=127",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -142,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_781453",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -150,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -158,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_717889",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -175,
+      "message": "INFO Request completed status=200 latency_ms=21",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -180,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -193,
+      "message": "INFO Request completed status=200 latency_ms=107",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -202,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_267414",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -210,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -210,
+      "message": "INFO Cache hit key=offer:6fb098f8-ff12-412e-a695-df0d7a42bd72",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -220,
+      "message": "INFO Request completed status=200 latency_ms=46",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -220,
+      "message": "ERROR Request completed status=500 latency_ms=11163",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -234,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_325772",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -240,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -251,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_201414",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -251,
+      "message": "INFO Request completed status=200 latency_ms=174",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -260,
+      "message": "INFO Cache hit key=offer:2b51eacf-01b8-491b-9aca-17761eb6310a",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -270,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -273,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -279,
+      "message": "ERROR Failed to evaluate offer customer_id=cust_899444 reason=null_segment",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -284,
+      "message": "INFO Request completed status=200 latency_ms=157",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -285,
+      "message": "ERROR Failed to evaluate offer customer_id=cust_337144 reason=null_segment",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -293,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_145561",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -300,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -300,
+      "message": "DEBUG Connection pool stats active=8 idle=10",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -302,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_496922",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -316,
+      "message": "ERROR java.lang.NullPointerException: customerSegment is null",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -317,
+      "message": "INFO Request completed status=200 latency_ms=95",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -330,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -335,
+      "message": "INFO Cache hit key=offer:14887a7d-07bc-4da2-9de7-80780ca3ba0c",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -341,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_748564",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -348,
+      "message": "INFO Request completed status=200 latency_ms=69",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -360,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -360,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -367,
+      "message": "INFO Request completed status=200 latency_ms=94",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -381,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_148050",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -390,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -420,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -428,
+      "message": "INFO Request completed status=200 latency_ms=136",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -429,
+      "message": "ERROR Request completed status=500 latency_ms=12432",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -432,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_205907",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -439,
+      "message": "ERROR Failed to evaluate offer customer_id=cust_904711 reason=null_segment",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -450,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -455,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_482554",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -461,
+      "message": "INFO Request completed status=200 latency_ms=110",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -474,
+      "message": "INFO Cache hit key=offer:a0efdf09-b7b3-4efa-8659-110eff4a6728",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -480,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -493,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -501,
+      "message": "INFO Request completed status=200 latency_ms=38",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -502,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_379946",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -510,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -519,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -521,
+      "message": "INFO Cache hit key=offer:4118348a-e0c1-45be-80a6-56efb9e3ca0c",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -527,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_279451",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -533,
+      "message": "INFO Request completed status=200 latency_ms=82",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -540,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -548,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_497887",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -560,
+      "message": "INFO Request completed status=200 latency_ms=162",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -569,
+      "message": "ERROR java.lang.NullPointerException: customerSegment is null",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -570,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -570,
+      "message": "INFO Cache hit key=offer:28fd20e5-d889-41c6-a57b-b0477f1515f4",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -570,
+      "message": "ERROR NullPointerException at OfferEligibilityService.evaluate:142",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -579,
+      "message": "ERROR Failed to evaluate offer customer_id=cust_520252 reason=null_segment",
+      "logStreamName": "incident-stream"
+    },
+    {
+      "offset_seconds": -594,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_440035",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -594,
+      "message": "INFO Request completed status=200 latency_ms=34",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -600,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -600,
+      "message": "DEBUG Connection pool stats active=6 idle=14",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -610,
+      "message": "INFO Request completed status=200 latency_ms=122",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -625,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_133659",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -630,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -648,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_321231",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -652,
+      "message": "INFO Request completed status=200 latency_ms=100",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -660,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -672,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_623481",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -680,
+      "message": "INFO Request completed status=200 latency_ms=137",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -684,
+      "message": "INFO Cache hit key=offer:817e14e8-cd1f-4f43-a5b5-87b196cf6b40",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -690,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -697,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_246413",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -713,
+      "message": "INFO Request completed status=200 latency_ms=163",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -720,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -722,
+      "message": "INFO Cache hit key=offer:3c52b660-377b-4381-9c5a-c704e4f95e4c",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -733,
+      "message": "INFO Request completed status=200 latency_ms=169",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -738,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_883300",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -750,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -754,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_329974",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -766,
+      "message": "INFO Request completed status=200 latency_ms=146",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -780,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -783,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_149405",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -784,
+      "message": "INFO Request completed status=200 latency_ms=180",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -802,
+      "message": "INFO Cache hit key=offer:6fe14cce-a774-4520-82d3-02d514f4b4b8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -807,
+      "message": "WARN Slow query took 974ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -810,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -816,
+      "message": "INFO Cache hit key=offer:d1d4dcf2-dee3-4646-bd83-7103a8488d59",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -823,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_813536",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -823,
+      "message": "WARN Slow query took 1684ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -829,
+      "message": "INFO Request completed status=200 latency_ms=36",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -840,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -851,
+      "message": "WARN DynamoDB throttling backoff_ms=240",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -854,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_724834",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -856,
+      "message": "INFO Request completed status=200 latency_ms=84",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -870,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -872,
+      "message": "WARN Slow query took 2237ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -900,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -900,
+      "message": "DEBUG Connection pool stats active=2 idle=12",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -921,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_112038",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -923,
+      "message": "INFO Request completed status=200 latency_ms=49",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -930,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -933,
+      "message": "INFO Cache hit key=offer:5bba1d74-5417-43bc-bb94-ea9394344f34",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -938,
+      "message": "INFO Request completed status=200 latency_ms=107",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -954,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_663054",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -960,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -965,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_555884",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -974,
+      "message": "INFO Request completed status=200 latency_ms=20",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -990,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -997,
+      "message": "WARN Slow query took 2140ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -999,
+      "message": "INFO Cache hit key=offer:4085563b-a7c4-4332-880a-c0883f8ab6e4",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1020,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1036,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_376183",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1044,
+      "message": "INFO Request completed status=200 latency_ms=65",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1044,
+      "message": "INFO Cache hit key=offer:580ecee4-5fd4-4ac8-a883-560f05586fbe",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1050,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1059,
+      "message": "INFO Request completed status=200 latency_ms=149",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1070,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_211579",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1080,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1091,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_260263",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1096,
+      "message": "INFO Cache hit key=offer:184278b1-3577-488c-9aaa-5e37a1cd18e0",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1104,
+      "message": "INFO Request completed status=200 latency_ms=61",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1110,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1110,
+      "message": "INFO Request completed status=200 latency_ms=173",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1126,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_916449",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1140,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1143,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_120422",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1150,
+      "message": "INFO Cache hit key=offer:edacb7be-6a9e-4822-927c-16be8b4a8369",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1151,
+      "message": "INFO Request completed status=200 latency_ms=98",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1170,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1172,
+      "message": "INFO Request completed status=200 latency_ms=41",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1188,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_352572",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1191,
+      "message": "INFO Cache hit key=offer:e5e720a9-7523-4de5-ac62-8c794784d761",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1200,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1200,
+      "message": "DEBUG Connection pool stats active=6 idle=8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1202,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_955662",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1224,
+      "message": "INFO Request completed status=200 latency_ms=156",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1230,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1245,
+      "message": "INFO Request completed status=200 latency_ms=160",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1251,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_234628",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1260,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1273,
+      "message": "INFO Request completed status=200 latency_ms=74",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1279,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_653306",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1290,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1310,
+      "message": "WARN Slow query took 2206ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1320,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1325,
+      "message": "INFO Cache hit key=offer:bbe96b45-4f25-4764-a4e6-82f17f7d9821",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1326,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_823378",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1342,
+      "message": "INFO Request completed status=200 latency_ms=99",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1350,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1361,
+      "message": "INFO Request completed status=200 latency_ms=132",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1370,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_804314",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1380,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1381,
+      "message": "INFO Cache hit key=offer:bf1b6e92-b3ab-42b2-a8a9-8232bf70b4ff",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1383,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_573417",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1387,
+      "message": "INFO Request completed status=200 latency_ms=77",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1410,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1427,
+      "message": "INFO Request completed status=200 latency_ms=78",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1428,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_122056",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1440,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1442,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_107540",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1444,
+      "message": "INFO Cache hit key=offer:5d35d1cf-7ac9-4457-8d55-df40f3830d96",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1462,
+      "message": "INFO Request completed status=200 latency_ms=35",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1470,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1472,
+      "message": "INFO Request completed status=200 latency_ms=151",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1480,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_132938",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1500,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1500,
+      "message": "DEBUG Connection pool stats active=6 idle=5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1503,
+      "message": "INFO Cache hit key=offer:cc068ec0-e1ae-4873-bac5-ce9dbbf9bb61",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1506,
+      "message": "INFO Request completed status=200 latency_ms=158",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1515,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_801474",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1530,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1545,
+      "message": "INFO Request completed status=200 latency_ms=82",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1548,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_698782",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1560,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1566,
+      "message": "INFO Request completed status=200 latency_ms=44",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1573,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_946721",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1590,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1601,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_551989",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1603,
+      "message": "INFO Request completed status=200 latency_ms=125",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1620,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1621,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_864491",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1626,
+      "message": "INFO Cache hit key=offer:315cb558-bdcd-4aba-9d32-d9671cd5a077",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1641,
+      "message": "INFO Request completed status=200 latency_ms=45",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1650,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1660,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_863587",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1675,
+      "message": "INFO Request completed status=200 latency_ms=47",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1680,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1694,
+      "message": "INFO Request completed status=200 latency_ms=55",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1697,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_299448",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1710,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1717,
+      "message": "INFO Request completed status=200 latency_ms=39",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1724,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_392075",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1740,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1743,
+      "message": "INFO Request completed status=200 latency_ms=32",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1757,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_997546",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1765,
+      "message": "INFO Cache hit key=offer:e42a4eae-6d86-4974-9f30-2968ec46b486",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1770,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1770,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_666847",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1772,
+      "message": "INFO Request completed status=200 latency_ms=80",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1800,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1800,
+      "message": "DEBUG Connection pool stats active=7 idle=15",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1801,
+      "message": "INFO Cache hit key=offer:74e54653-3518-4719-929d-7d3dfdb62970",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1806,
+      "message": "INFO Request completed status=200 latency_ms=122",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1815,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_609231",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1830,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1848,
+      "message": "INFO Cache hit key=offer:d3589f1f-d54f-45a0-85c6-7f0c1dbe6742",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1860,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1868,
+      "message": "INFO Request completed status=200 latency_ms=136",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1872,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_102260",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1890,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1913,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_830429",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1913,
+      "message": "INFO Cache hit key=offer:8df8c708-93fa-42fb-b2c1-067bb68294a5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1915,
+      "message": "INFO Request completed status=200 latency_ms=162",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1920,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1924,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_610311",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1926,
+      "message": "INFO Request completed status=200 latency_ms=95",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1931,
+      "message": "WARN Slow query took 1647ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1950,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1950,
+      "message": "INFO Cache hit key=offer:d78b87fb-0091-4246-ab71-005e683b4482",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1968,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_161324",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1973,
+      "message": "INFO Request completed status=200 latency_ms=158",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1980,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1981,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_428838",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -1981,
+      "message": "INFO Request completed status=200 latency_ms=169",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2010,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2015,
+      "message": "INFO Request completed status=200 latency_ms=34",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2016,
+      "message": "INFO Cache hit key=offer:58996667-c752-4ea3-b7e2-0258164f6ede",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2026,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_994141",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2036,
+      "message": "INFO Cache hit key=offer:65fd2797-eb01-42bb-af6b-aaa4befd27b5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2040,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2070,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2072,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_294851",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2075,
+      "message": "INFO Cache hit key=offer:9aae5007-ac42-4320-890a-29158d4b3223",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2089,
+      "message": "INFO Request completed status=200 latency_ms=37",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2100,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2100,
+      "message": "DEBUG Connection pool stats active=6 idle=9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2103,
+      "message": "INFO Request completed status=200 latency_ms=165",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2112,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_346629",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2130,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2131,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_723398",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2139,
+      "message": "INFO Cache hit key=offer:48d318be-66c7-4ae7-93b7-9151adfb8667",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2148,
+      "message": "WARN Slow query took 1566ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2149,
+      "message": "INFO Request completed status=200 latency_ms=40",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2160,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2175,
+      "message": "INFO Cache hit key=offer:1a27d000-87d3-45fa-ae47-3fe63d746c50",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2176,
+      "message": "INFO Request completed status=200 latency_ms=100",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2178,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_712024",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2190,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2220,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2221,
+      "message": "ERROR Timeout calling segmentation-service after 5000ms",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2227,
+      "message": "INFO Request completed status=200 latency_ms=87",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2230,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_850981",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2242,
+      "message": "INFO Cache hit key=offer:61ee7e2e-e3a3-4127-bc8a-88f66b5f29b1",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2250,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2259,
+      "message": "INFO Request completed status=200 latency_ms=137",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2270,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_804318",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2279,
+      "message": "INFO Cache hit key=offer:cd62f30b-d66e-4aa0-a6b4-fc36d074b9bd",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2280,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2280,
+      "message": "INFO Request completed status=200 latency_ms=137",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2282,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_888387",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2310,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2312,
+      "message": "INFO Request completed status=200 latency_ms=157",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2313,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_690341",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2324,
+      "message": "INFO Cache hit key=offer:bfe93c0b-8671-4fc7-b0e2-f34c2881a76e",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2340,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2340,
+      "message": "INFO Cache hit key=offer:81ac30d8-0f9d-445b-9372-1dd17cd9648f",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2344,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_378082",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2351,
+      "message": "INFO Request completed status=200 latency_ms=37",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2370,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2375,
+      "message": "INFO Request completed status=200 latency_ms=132",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2379,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_487477",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2400,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2400,
+      "message": "DEBUG Connection pool stats active=5 idle=15",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2409,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_837715",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2419,
+      "message": "INFO Request completed status=200 latency_ms=155",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2430,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2439,
+      "message": "INFO Request completed status=200 latency_ms=46",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2447,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_956795",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2448,
+      "message": "INFO Cache hit key=offer:52f60c53-0b41-400e-b9b0-12ba736d0417",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2460,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2485,
+      "message": "INFO Cache hit key=offer:31e279ca-b002-456b-9ad6-b45e62d68cb5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2490,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2493,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_221035",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2513,
+      "message": "INFO Request completed status=200 latency_ms=161",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2520,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2526,
+      "message": "INFO Request completed status=200 latency_ms=107",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2539,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_395442",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2542,
+      "message": "INFO Cache hit key=offer:60c7fb70-ddd4-40d4-b301-a1292592de07",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2550,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2558,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_765046",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2566,
+      "message": "INFO Request completed status=200 latency_ms=145",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2580,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2581,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_987204",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2582,
+      "message": "INFO Request completed status=200 latency_ms=128",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2610,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2610,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_146228",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2620,
+      "message": "INFO Request completed status=200 latency_ms=53",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2620,
+      "message": "WARN Slow query took 1674ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2620,
+      "message": "WARN Slow query took 2162ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2637,
+      "message": "INFO Cache hit key=offer:0787e3dd-ac22-42c8-a5d7-3b4e6ad5b1d1",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2640,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2645,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_374680",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2663,
+      "message": "INFO Request completed status=200 latency_ms=133",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2670,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2670,
+      "message": "INFO Request completed status=200 latency_ms=48",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2684,
+      "message": "INFO Cache hit key=offer:e6793372-a93c-4acc-aaee-1cc128425a4d",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2687,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_548462",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2700,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2700,
+      "message": "DEBUG Connection pool stats active=2 idle=5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2704,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_824586",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2717,
+      "message": "INFO Request completed status=200 latency_ms=29",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2730,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2734,
+      "message": "INFO Request completed status=200 latency_ms=130",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2747,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_710805",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2760,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2769,
+      "message": "INFO Cache hit key=offer:4c8f1635-e738-41f1-a7c0-9cfe05fab7b9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2771,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_423232",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2785,
+      "message": "INFO Request completed status=200 latency_ms=30",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2790,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2797,
+      "message": "INFO Request completed status=200 latency_ms=46",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2811,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_320281",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2820,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2833,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_687080",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2836,
+      "message": "WARN Slow query took 1728ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2839,
+      "message": "INFO Request completed status=200 latency_ms=59",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2850,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2859,
+      "message": "INFO Cache hit key=offer:75f322d7-6965-4cf3-b3f9-3e83d632003e",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2880,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2905,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_270395",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2905,
+      "message": "INFO Request completed status=200 latency_ms=65",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2910,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2915,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_125990",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2916,
+      "message": "INFO Cache hit key=offer:05cfed96-92e3-40f6-890d-1599e296ef68",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2933,
+      "message": "INFO Request completed status=200 latency_ms=105",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2940,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2943,
+      "message": "INFO Cache hit key=offer:6b8df725-a76d-4d4e-9014-75dc89c41e4b",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2961,
+      "message": "INFO Request completed status=200 latency_ms=83",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2965,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_531712",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2970,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2973,
+      "message": "INFO Request completed status=200 latency_ms=117",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2992,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_925622",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -2995,
+      "message": "INFO Cache hit key=offer:0edd9eac-2a83-4fd4-ab65-1e1236a23be5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3000,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3000,
+      "message": "DEBUG Connection pool stats active=5 idle=11",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3006,
+      "message": "INFO Request completed status=200 latency_ms=137",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3007,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_593554",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3030,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3037,
+      "message": "INFO Request completed status=200 latency_ms=77",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3051,
+      "message": "INFO Cache hit key=offer:fbeb9409-930c-4762-960b-7d0a609a0ebb",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3055,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_960394",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3060,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3070,
+      "message": "INFO Request completed status=200 latency_ms=91",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3072,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_302511",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3090,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3098,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_910891",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3101,
+      "message": "INFO Request completed status=200 latency_ms=150",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3120,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3130,
+      "message": "INFO Request completed status=200 latency_ms=27",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3137,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_984642",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3150,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3155,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_373903",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3168,
+      "message": "INFO Request completed status=200 latency_ms=87",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3180,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3191,
+      "message": "INFO Request completed status=200 latency_ms=100",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3193,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_725550",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3210,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3213,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_636265",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3222,
+      "message": "INFO Request completed status=200 latency_ms=167",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3240,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3253,
+      "message": "INFO Request completed status=200 latency_ms=20",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3262,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_146542",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3270,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3287,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_945687",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3291,
+      "message": "INFO Request completed status=200 latency_ms=70",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3300,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3300,
+      "message": "DEBUG Connection pool stats active=5 idle=15",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3310,
+      "message": "INFO Request completed status=200 latency_ms=179",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3321,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_173372",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3326,
+      "message": "WARN Slow query took 1651ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3330,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3333,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_989208",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3353,
+      "message": "INFO Request completed status=200 latency_ms=96",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3360,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3370,
+      "message": "INFO Request completed status=200 latency_ms=123",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3373,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_799287",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3390,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3394,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_681343",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3396,
+      "message": "INFO Request completed status=200 latency_ms=127",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3420,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3425,
+      "message": "WARN DynamoDB throttling backoff_ms=231",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3441,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_497562",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3442,
+      "message": "INFO Cache hit key=offer:98bb626c-0bbe-4aab-a7c7-6a39f3b398bb",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3443,
+      "message": "INFO Request completed status=200 latency_ms=64",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3450,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3462,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_415568",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3467,
+      "message": "INFO Request completed status=200 latency_ms=20",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3477,
+      "message": "INFO Cache hit key=offer:c03ce623-aee9-4652-a91a-bb81a5a3a2db",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3480,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3493,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_320392",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3505,
+      "message": "INFO Request completed status=200 latency_ms=168",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3510,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3518,
+      "message": "INFO Cache hit key=offer:a00d34f3-f925-4632-ad11-07982980e8f5",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3524,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_437902",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3524,
+      "message": "INFO Request completed status=200 latency_ms=133",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3540,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3555,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_636004",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3565,
+      "message": "INFO Request completed status=200 latency_ms=63",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3570,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3583,
+      "message": "WARN Slow query took 1724ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3586,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_397571",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3591,
+      "message": "INFO Request completed status=200 latency_ms=178",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3595,
+      "message": "INFO Cache hit key=offer:ee293abf-81d7-4640-a34e-fc7861e9e2cf",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3600,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3600,
+      "message": "DEBUG Connection pool stats active=2 idle=12",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3607,
+      "message": "INFO Request completed status=200 latency_ms=99",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3619,
+      "message": "INFO Cache hit key=offer:571e30a6-bb94-42fc-8749-f0eba9e6e8ed",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3624,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_958179",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3630,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3630,
+      "message": "INFO Request completed status=200 latency_ms=31",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3634,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_308802",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3660,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3679,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_598216",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3684,
+      "message": "INFO Request completed status=200 latency_ms=38",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3690,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3696,
+      "message": "INFO Request completed status=200 latency_ms=118",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3708,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_760356",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3713,
+      "message": "INFO Cache hit key=offer:4b34dc3a-93af-4aa4-8697-0133c948bccf",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3720,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3724,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_355836",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3740,
+      "message": "INFO Request completed status=200 latency_ms=21",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3750,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3753,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_907451",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3774,
+      "message": "INFO Request completed status=200 latency_ms=128",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3780,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3796,
+      "message": "INFO Request completed status=200 latency_ms=138",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3798,
+      "message": "INFO Cache hit key=offer:18aabcd9-8fa1-4100-8350-0d873ae18d65",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3802,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_943170",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3810,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3813,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_361303",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3824,
+      "message": "INFO Request completed status=200 latency_ms=54",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3840,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3851,
+      "message": "INFO Cache hit key=offer:f13588db-c94e-4c30-baef-36739465ec21",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3856,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_800005",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3857,
+      "message": "INFO Request completed status=200 latency_ms=172",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3870,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3878,
+      "message": "INFO Cache hit key=offer:aba83db6-4063-4a2b-9448-e954e20074e8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3884,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_891937",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3889,
+      "message": "INFO Request completed status=200 latency_ms=149",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3900,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3900,
+      "message": "DEBUG Connection pool stats active=7 idle=12",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3905,
+      "message": "INFO Request completed status=200 latency_ms=141",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3914,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_674485",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3930,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3937,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_888295",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3945,
+      "message": "WARN Slow query took 937ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3950,
+      "message": "INFO Request completed status=200 latency_ms=90",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3960,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3975,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_646622",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3980,
+      "message": "INFO Request completed status=200 latency_ms=81",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3990,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -3999,
+      "message": "INFO Request completed status=200 latency_ms=80",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4012,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_181247",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4020,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4022,
+      "message": "INFO Request completed status=200 latency_ms=55",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4037,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_435239",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4037,
+      "message": "INFO Cache hit key=offer:8401b675-8933-456c-89f0-86cf14355821",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4050,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4054,
+      "message": "INFO Request completed status=200 latency_ms=74",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4072,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_501641",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4080,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4090,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_527398",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4097,
+      "message": "INFO Request completed status=200 latency_ms=139",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4110,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4122,
+      "message": "INFO Request completed status=200 latency_ms=169",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4123,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_316881",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4140,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4156,
+      "message": "ERROR Timeout calling segmentation-service after 5000ms",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4170,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4170,
+      "message": "INFO Cache hit key=offer:273b1aa5-4176-4908-9b9f-bfd3938bfb40",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4182,
+      "message": "INFO Request completed status=200 latency_ms=142",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4188,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_902784",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4200,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4200,
+      "message": "DEBUG Connection pool stats active=2 idle=6",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4209,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_468845",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4224,
+      "message": "INFO Request completed status=200 latency_ms=119",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4230,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4243,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_976325",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4247,
+      "message": "INFO Request completed status=200 latency_ms=159",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4251,
+      "message": "INFO Cache hit key=offer:25f95eef-3598-4266-afb5-ab00dc7966d9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4260,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4267,
+      "message": "INFO Request completed status=200 latency_ms=89",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4275,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_331251",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4290,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4300,
+      "message": "INFO Request completed status=200 latency_ms=123",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4302,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_130434",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4320,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4324,
+      "message": "INFO Request completed status=200 latency_ms=179",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4324,
+      "message": "INFO Cache hit key=offer:f47dd282-7eea-4eed-90aa-ba3578cca8fe",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4334,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_981334",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4350,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4359,
+      "message": "ERROR Timeout calling segmentation-service after 5000ms",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4368,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_513160",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4368,
+      "message": "INFO Request completed status=200 latency_ms=26",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4379,
+      "message": "INFO Cache hit key=offer:e5061a74-d36b-4b9a-bc78-e28218916a9b",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4380,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4384,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_549433",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4394,
+      "message": "INFO Request completed status=200 latency_ms=66",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4410,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4416,
+      "message": "INFO Request completed status=200 latency_ms=136",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4420,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_497519",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4440,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4448,
+      "message": "INFO Request completed status=200 latency_ms=127",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4452,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_898207",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4470,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4470,
+      "message": "INFO Request completed status=200 latency_ms=158",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4485,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_185884",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4500,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4500,
+      "message": "DEBUG Connection pool stats active=4 idle=14",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4507,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_466960",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4520,
+      "message": "INFO Request completed status=200 latency_ms=37",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4530,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4531,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_783414",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4554,
+      "message": "INFO Request completed status=200 latency_ms=27",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4560,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4576,
+      "message": "WARN Slow query took 2276ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4590,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4594,
+      "message": "INFO Request completed status=200 latency_ms=81",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4609,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_121369",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4617,
+      "message": "WARN DynamoDB throttling backoff_ms=80",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4620,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4623,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_801978",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4638,
+      "message": "INFO Request completed status=200 latency_ms=75",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4650,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4660,
+      "message": "INFO Cache hit key=offer:b95dc255-e453-47e7-9070-52db2534f109",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4661,
+      "message": "INFO Request completed status=200 latency_ms=62",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4661,
+      "message": "WARN DynamoDB throttling backoff_ms=218",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4674,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_368690",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4680,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4683,
+      "message": "INFO Request completed status=200 latency_ms=61",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4702,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_884256",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4710,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4714,
+      "message": "INFO Cache hit key=offer:13ac7917-962b-431b-a624-4740b7aa1fa8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4740,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4748,
+      "message": "INFO Cache hit key=offer:f64e6647-7d8e-4e34-98a4-314ae089a45b",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4749,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_126925",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4758,
+      "message": "INFO Request completed status=200 latency_ms=116",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4770,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4772,
+      "message": "INFO Request completed status=200 latency_ms=171",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4776,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_849747",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4786,
+      "message": "INFO Cache hit key=offer:913da874-304e-4ca2-9344-c290780f5d81",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4800,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4800,
+      "message": "DEBUG Connection pool stats active=3 idle=6",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4803,
+      "message": "INFO Request completed status=200 latency_ms=97",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4807,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_757711",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4830,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4833,
+      "message": "INFO Request completed status=200 latency_ms=164",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4855,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_729577",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4855,
+      "message": "INFO Cache hit key=offer:5e03c179-302f-4a83-9e77-f16f110a6ab2",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4860,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4864,
+      "message": "WARN DynamoDB throttling backoff_ms=337",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4873,
+      "message": "INFO Request completed status=200 latency_ms=114",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4877,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_464069",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4890,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4890,
+      "message": "INFO Request completed status=200 latency_ms=127",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4900,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_778998",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4919,
+      "message": "INFO Cache hit key=offer:8a4f2de2-43bb-4a9e-b339-54af77bf58ce",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4920,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4931,
+      "message": "INFO Request completed status=200 latency_ms=137",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4933,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_210665",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4950,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4955,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_556641",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4973,
+      "message": "INFO Request completed status=200 latency_ms=153",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4980,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -4989,
+      "message": "INFO Cache hit key=offer:11c00a86-7bb9-47c7-8972-d94769d35455",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5010,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5019,
+      "message": "WARN Slow query took 1681ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5027,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_947458",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5034,
+      "message": "INFO Request completed status=200 latency_ms=143",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5040,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5058,
+      "message": "INFO Request completed status=200 latency_ms=88",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5063,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_965845",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5070,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5072,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_357420",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5078,
+      "message": "INFO Request completed status=200 latency_ms=135",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5079,
+      "message": "INFO Cache hit key=offer:5d45d318-d344-4b95-ac49-488b63f301e1",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5089,
+      "message": "INFO Cache hit key=offer:b532ec46-d197-4472-8bf0-88e9742f7a23",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5100,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5100,
+      "message": "DEBUG Connection pool stats active=3 idle=9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5118,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_587282",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5119,
+      "message": "INFO Request completed status=200 latency_ms=117",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5130,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5135,
+      "message": "INFO Request completed status=200 latency_ms=144",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5140,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_618317",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5159,
+      "message": "INFO Cache hit key=offer:2f02c022-56b2-4e80-86da-7631909ba9e2",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5160,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5168,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_936587",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5170,
+      "message": "INFO Request completed status=200 latency_ms=91",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5190,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5198,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_835244",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5207,
+      "message": "INFO Request completed status=200 latency_ms=22",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5220,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5222,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_300337",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5227,
+      "message": "INFO Request completed status=200 latency_ms=124",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5246,
+      "message": "INFO Cache hit key=offer:28ef8a88-9a1f-4421-9c9f-61151c3145be",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5250,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5257,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_894993",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5267,
+      "message": "INFO Cache hit key=offer:ac56da7c-73b3-4498-a347-a6d1aa45df43",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5272,
+      "message": "INFO Request completed status=200 latency_ms=141",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5280,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5294,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_614663",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5305,
+      "message": "INFO Request completed status=200 latency_ms=24",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5310,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5322,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_332360",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5332,
+      "message": "INFO Request completed status=200 latency_ms=82",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5340,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5351,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_709805",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5355,
+      "message": "INFO Request completed status=200 latency_ms=161",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5370,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5386,
+      "message": "INFO Cache hit key=offer:8e95ad8a-5bf9-4a88-aee5-6eb0dab76554",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5387,
+      "message": "INFO Request completed status=200 latency_ms=104",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5392,
+      "message": "WARN Slow query took 2374ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5393,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_546173",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5400,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5400,
+      "message": "DEBUG Connection pool stats active=6 idle=15",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5408,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_575786",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5409,
+      "message": "INFO Request completed status=200 latency_ms=84",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5415,
+      "message": "INFO Cache hit key=offer:de5f01fe-8665-4925-a2e6-86c0d3b18a3c",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5430,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5436,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_856321",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5440,
+      "message": "INFO Request completed status=200 latency_ms=50",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5460,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5465,
+      "message": "INFO Request completed status=200 latency_ms=69",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5482,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_899213",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5490,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5498,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_607719",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5510,
+      "message": "WARN DynamoDB throttling backoff_ms=266",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5513,
+      "message": "INFO Request completed status=200 latency_ms=170",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5519,
+      "message": "INFO Cache hit key=offer:33eced73-79c0-4257-9945-7237d81b77ee",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5520,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5548,
+      "message": "WARN DynamoDB throttling backoff_ms=112",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5550,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5553,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_396745",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5556,
+      "message": "INFO Request completed status=200 latency_ms=95",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5569,
+      "message": "INFO Cache hit key=offer:f31ef6d7-c976-4a05-95a5-0d1103d6bbc9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5580,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5580,
+      "message": "INFO Request completed status=200 latency_ms=156",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5589,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_288158",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5589,
+      "message": "INFO Cache hit key=offer:323a1287-b1f4-4866-ab76-42e3be6ab39b",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5610,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5611,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_147726",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5627,
+      "message": "INFO Request completed status=200 latency_ms=94",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5640,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5660,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_232413",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5664,
+      "message": "INFO Request completed status=200 latency_ms=145",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5670,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5679,
+      "message": "INFO Request completed status=200 latency_ms=140",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5688,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_112861",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5700,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5700,
+      "message": "DEBUG Connection pool stats active=6 idle=13",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5701,
+      "message": "INFO Request completed status=200 latency_ms=84",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5701,
+      "message": "INFO Cache hit key=offer:f07b576b-e461-4e0a-ad94-88d61d880a3b",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5705,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_457256",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5730,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5732,
+      "message": "INFO Cache hit key=offer:1390f392-5f9d-4af0-948d-97caadf8c169",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5760,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5762,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_962050",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5772,
+      "message": "INFO Request completed status=200 latency_ms=145",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5783,
+      "message": "INFO Cache hit key=offer:162c99ab-f9c9-4181-a902-a1f25aba0967",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5790,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5791,
+      "message": "INFO Request completed status=200 latency_ms=58",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5811,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_760021",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5820,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5822,
+      "message": "INFO Request completed status=200 latency_ms=83",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5829,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_690180",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5833,
+      "message": "INFO Cache hit key=offer:2fc63261-6e83-4970-b02f-e78867d1266f",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5850,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5863,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_901577",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5869,
+      "message": "INFO Request completed status=200 latency_ms=172",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5880,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5896,
+      "message": "INFO Request completed status=200 latency_ms=117",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5904,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_336650",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5910,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5919,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_564226",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5928,
+      "message": "INFO Request completed status=200 latency_ms=129",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5940,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5941,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_751194",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5959,
+      "message": "INFO Request completed status=200 latency_ms=45",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5963,
+      "message": "INFO Cache hit key=offer:6be96650-395a-4d33-8366-a81886210695",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -5970,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6000,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6000,
+      "message": "DEBUG Connection pool stats active=7 idle=10",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6007,
+      "message": "INFO Cache hit key=offer:f8b874a2-86d2-46df-b406-09500326ee9f",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6008,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_321275",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6021,
+      "message": "INFO Request completed status=200 latency_ms=40",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6030,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6032,
+      "message": "INFO Request completed status=200 latency_ms=60",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6036,
+      "message": "WARN Slow query took 994ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6047,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_282256",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6047,
+      "message": "INFO Cache hit key=offer:2ad2ef13-f89b-4604-97b6-1a0f6bd1cc82",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6060,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6079,
+      "message": "INFO Request completed status=200 latency_ms=140",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6082,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_572387",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6082,
+      "message": "INFO Cache hit key=offer:b538f64f-d35f-4c3f-b58f-275c0db0ec85",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6090,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6099,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_342720",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6112,
+      "message": "INFO Request completed status=200 latency_ms=92",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6120,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6122,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_576086",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6141,
+      "message": "INFO Request completed status=200 latency_ms=79",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6150,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6180,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6198,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_755420",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6201,
+      "message": "INFO Request completed status=200 latency_ms=70",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6210,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6217,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_671015",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6223,
+      "message": "INFO Cache hit key=offer:542da695-c15d-4c8d-8745-4d587444d1d8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6230,
+      "message": "INFO Request completed status=200 latency_ms=58",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6240,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6270,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6271,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_174878",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6275,
+      "message": "INFO Request completed status=200 latency_ms=98",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6293,
+      "message": "INFO Cache hit key=offer:aba140fc-af9c-4b67-80af-9178efc961ef",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6300,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6300,
+      "message": "DEBUG Connection pool stats active=5 idle=14",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6309,
+      "message": "INFO Request completed status=200 latency_ms=132",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6318,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_964278",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6330,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6339,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_822131",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6352,
+      "message": "INFO Request completed status=200 latency_ms=123",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6360,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6366,
+      "message": "INFO Cache hit key=offer:61a17867-48d6-42f1-a3e9-82bcd18bbd46",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6390,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6392,
+      "message": "INFO Request completed status=200 latency_ms=173",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6398,
+      "message": "INFO Cache hit key=offer:447a2712-ce70-40c1-9616-07b473fdc006",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6404,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_617781",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6420,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6430,
+      "message": "INFO Request completed status=200 latency_ms=174",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6443,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_553014",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6450,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6457,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_195763",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6471,
+      "message": "INFO Request completed status=200 latency_ms=167",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6480,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6501,
+      "message": "INFO Request completed status=200 latency_ms=88",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6504,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_121753",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6510,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6515,
+      "message": "INFO Request completed status=200 latency_ms=140",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6515,
+      "message": "INFO Cache hit key=offer:ac8da450-80e3-4414-b922-208ae4677415",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6534,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_900177",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6538,
+      "message": "INFO Cache hit key=offer:bd037485-6ff2-4f89-b8c3-236018bbbc53",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6540,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6545,
+      "message": "INFO Request completed status=200 latency_ms=169",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6548,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_563711",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6570,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6572,
+      "message": "INFO Request completed status=200 latency_ms=140",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6585,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_953797",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6600,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6600,
+      "message": "DEBUG Connection pool stats active=6 idle=9",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6610,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_449499",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6621,
+      "message": "INFO Request completed status=200 latency_ms=46",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6624,
+      "message": "INFO Cache hit key=offer:b14c18f5-cb81-4e6d-a856-346dc6b5904f",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6630,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6643,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_445824",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6652,
+      "message": "INFO Request completed status=200 latency_ms=146",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6660,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6677,
+      "message": "INFO Request completed status=200 latency_ms=29",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6684,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_519904",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6690,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6698,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_429795",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6700,
+      "message": "INFO Request completed status=200 latency_ms=49",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6710,
+      "message": "WARN DynamoDB throttling backoff_ms=116",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6718,
+      "message": "ERROR Timeout calling segmentation-service after 5000ms",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6720,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6722,
+      "message": "INFO Cache hit key=offer:05014e44-f774-4f6d-a009-535fe30d9af1",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6750,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6750,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_639593",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6771,
+      "message": "INFO Request completed status=200 latency_ms=158",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6780,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6786,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_156837",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6796,
+      "message": "INFO Request completed status=200 latency_ms=112",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6803,
+      "message": "INFO Cache hit key=offer:3d8d2515-9e16-46e1-b880-c6e1fdd94069",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6810,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6824,
+      "message": "INFO Request completed status=200 latency_ms=33",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6830,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_622707",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6840,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6844,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_675898",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6849,
+      "message": "INFO Request completed status=200 latency_ms=132",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6851,
+      "message": "INFO Cache hit key=offer:0331037e-f05a-4fce-969f-54154698be9e",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6870,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6870,
+      "message": "INFO Request completed status=200 latency_ms=175",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6873,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_608257",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6886,
+      "message": "INFO Cache hit key=offer:dec80fa1-f914-4c54-8b3b-c17cb1411520",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6900,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6900,
+      "message": "DEBUG Connection pool stats active=5 idle=13",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6905,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_844261",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6909,
+      "message": "INFO Request completed status=200 latency_ms=161",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6930,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6932,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_527809",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6937,
+      "message": "INFO Request completed status=200 latency_ms=49",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6952,
+      "message": "INFO Cache hit key=offer:f8346e87-7a28-4d0d-afe7-7c7ae8cdbec8",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6960,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6964,
+      "message": "INFO Request completed status=200 latency_ms=147",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6980,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_223172",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -6990,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7020,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7028,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_839677",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7033,
+      "message": "INFO Request completed status=200 latency_ms=143",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7040,
+      "message": "INFO Cache hit key=offer:8bfd3c68-9828-47f3-b876-04ad45ddab4f",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7050,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7080,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7081,
+      "message": "INFO Cache hit key=offer:b1fbe123-c120-41b9-8c57-01bf13cb90ec",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7084,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_678043",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7092,
+      "message": "INFO Request completed status=200 latency_ms=68",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7110,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7136,
+      "message": "INFO Cache hit key=offer:89d11b3b-12e7-473c-9ea7-4df822fe0574",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7140,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7142,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_243139",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7148,
+      "message": "INFO Request completed status=200 latency_ms=126",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7150,
+      "message": "WARN Slow query took 1240ms query=SELECT_OFFERS_BY_SEGMENT",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7159,
+      "message": "INFO Cache hit key=offer:0dc3a7ae-52f8-443b-8d24-3916c99014b3",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7170,
+      "message": "INFO Health check OK",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7178,
+      "message": "INFO Request completed status=200 latency_ms=20",
+      "logStreamName": "main-stream"
+    },
+    {
+      "offset_seconds": -7186,
+      "message": "INFO Request received GET /api/v1/offers customer_id=cust_925981",
+      "logStreamName": "main-stream"
+    }
+  ]
+}
