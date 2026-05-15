@@ -43,17 +43,12 @@ def record_session_signatures(conn, session_id: str, log_group: str,
         sig_id = storage.upsert_signature(
             conn, log_group, sig_text, severity, latest
         )
-        # If this is the first time we've seen the signature, first_seen
-        # gets set to `latest` by upsert. Patch it down to `earliest` so
-        # first_seen accurately reflects the earliest occurrence we saw.
         conn.execute(
             "UPDATE signatures SET first_seen_ms = MIN(first_seen_ms, ?) "
             "WHERE id = ?",
             (earliest, sig_id),
         )
 
-        # Backfill signature_id on the underlying log_events rows.
-        # We do this in bulk per signature to avoid N updates.
         event_ids = [e["id"] for e in evs]
         placeholders = ",".join("?" * len(event_ids))
         conn.execute(

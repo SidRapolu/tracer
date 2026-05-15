@@ -124,9 +124,6 @@ def init_db(db_path: Path = DEFAULT_DB_PATH) -> None:
     with connect(db_path) as conn:
         conn.executescript(SCHEMA)
 
-
-# ---------- Sessions ----------
-
 def create_session(conn, session_id: str, log_group: str,
                    window_start_ms: int, window_end_ms: int) -> None:
     conn.execute(
@@ -159,9 +156,6 @@ def list_sessions(conn, log_group: str | None = None, limit: int = 20):
             (limit,),
         ).fetchall()
     return [dict(r) for r in rows]
-
-
-# ---------- Log events ----------
 
 def insert_events(conn, session_id: str, log_group: str,
                   events: Iterable[dict]) -> int:
@@ -198,9 +192,6 @@ def set_event_signature(conn, event_id: int, signature_id: int) -> None:
         "UPDATE log_events SET signature_id = ? WHERE id = ?",
         (signature_id, event_id),
     )
-
-
-# ---------- Signatures ----------
 
 def upsert_signature(conn, log_group: str, signature_text: str,
                      severity: str, observed_at_ms: int) -> int:
@@ -308,9 +299,6 @@ def historical_signature_stats(conn, signature_id: int,
         "total": row["total"] if row else 0,
         "sessions_present": row["sessions_present"] if row else 0,
     }
-
-
-# ---------- Candidates ----------
 
 def insert_candidates(conn, session_id: str, ranked: list[dict]) -> None:
     conn.execute("DELETE FROM candidates WHERE session_id = ?", (session_id,))

@@ -26,7 +26,6 @@ elsewhere.
 
 import re
 
-# Order matters here. Each pattern is (regex, placeholder).
 _NORMALIZERS: list[tuple[re.Pattern, str]] = [
     # ISO timestamps with optional fractional seconds and zone
     (re.compile(r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?"), "<TS>"),
@@ -58,7 +57,6 @@ def extract_signature(message: str) -> str:
     return sig
 
 
-# ---------- Severity ----------
 
 _SEVERITY_PATTERNS: list[tuple[re.Pattern, str]] = [
     (re.compile(r"^\s*(?:\[)?FATAL\b", re.IGNORECASE), "FATAL"),
@@ -89,7 +87,6 @@ def extract_severity(message: str) -> str:
     return "INFO"
 
 
-# ---------- Batch helper ----------
 
 def signaturize(events: list[dict]) -> list[dict]:
     """

@@ -44,8 +44,6 @@ def _novelty(stats: dict) -> float:
     Approaches 0 as it appears in more prior sessions.
     """
     if stats["sessions_total"] == 0:
-        # No baseline at all yet — we have nothing to compare against.
-        # Treat as "moderately novel" so first-run scores aren't all 1.0.
         return 0.5
     return max(0.0, 1.0 - stats["frequency"])
 

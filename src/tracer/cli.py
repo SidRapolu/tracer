@@ -26,8 +26,6 @@ def _get_client(fake: bool, profile: str):
     return boto3.Session(profile_name=profile).client("logs")
 
 
-# ---------- analyze ----------
-
 def cmd_analyze(args) -> int:
     storage.init_db()
     client = _get_client(args.fake, args.profile)
@@ -115,7 +113,6 @@ def _print_analysis(session_id: str, log_group: str,
         print()
 
 
-# ---------- history ----------
 
 def cmd_history(args) -> int:
     storage.init_db()
@@ -132,7 +129,6 @@ def cmd_history(args) -> int:
     return 0
 
 
-# ---------- inspect ----------
 
 def cmd_inspect(args) -> int:
     storage.init_db()
@@ -155,15 +151,12 @@ def cmd_inspect(args) -> int:
     return 0
 
 
-# ---------- init-db ----------
-
 def cmd_init_db(args) -> int:
     storage.init_db()
     print(f"Initialized database at {storage.DEFAULT_DB_PATH}")
     return 0
 
-
-# ---------- main ----------
+w
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="tracer")
