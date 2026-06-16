@@ -38,3 +38,11 @@ def build_log_source(config: Config) -> LogSource:
         return CloudWatchLogSource(boto3.client("logs", region_name=config.aws_region))
 
     raise ValueError(f"unknown log source: {config.log_source!r}")
+
+
+def build_embedder(config: Config):
+    import boto3
+
+    from signatures.embed import TitanEmbedder
+
+    return TitanEmbedder(boto3.client("bedrock-runtime", region_name=config.aws_region))

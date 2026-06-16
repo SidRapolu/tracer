@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS signatures (
     service       TEXT        NOT NULL,
     fingerprint   TEXT        NOT NULL,
     template      TEXT        NOT NULL,
+    embedding     VECTOR(1024),
     first_seen    TIMESTAMPTZ NOT NULL DEFAULT now(),
     UNIQUE (service, fingerprint)
 );
@@ -64,7 +65,7 @@ CREATE TABLE IF NOT EXISTS signature_occurrences (
 CREATE INDEX IF NOT EXISTS idx_occ_signature ON signature_occurrences (signature_id);
 CREATE INDEX IF NOT EXISTS idx_occ_session   ON signature_occurrences (session_id);
 
--- One ranked candidate's persisted result.
+-- One ranked candidate's persisted result. 
 CREATE TABLE IF NOT EXISTS analyses (
     id              BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     session_id      BIGINT      NOT NULL REFERENCES sessions (id) ON DELETE CASCADE,
