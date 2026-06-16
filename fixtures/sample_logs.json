@@ -1,0 +1,25 @@
+{
+  "events": [
+    {"timestamp": "2026-05-01T11:00:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:01:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:02:00Z", "message": "INFO request id=a91 completed in 42ms", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:03:00Z", "message": "WARN slow query took 812ms on orders", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:04:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:05:00Z", "message": "INFO request id=b12 completed in 38ms", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:06:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:07:00Z", "message": "WARN slow query took 905ms on orders", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:08:00Z", "message": "INFO request id=c77 completed in 51ms", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+    {"timestamp": "2026-05-01T11:09:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s1"},
+
+    {"timestamp": "2026-05-01T12:00:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:01:00Z", "message": "INFO request id=d01 completed in 44ms", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:02:00Z", "message": "ERROR NullPointerException at PaymentProcessor.charge line 88", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:02:01Z", "message": "ERROR NullPointerException at PaymentProcessor.charge line 88", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:02:05Z", "message": "ERROR NullPointerException at PaymentProcessor.charge line 88", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:03:00Z", "message": "WARN slow query took 870ms on orders", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:03:30Z", "message": "ERROR downstream timeout calling fraud-service after 3000ms", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:04:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:04:10Z", "message": "ERROR NullPointerException at PaymentProcessor.charge line 88", "log_group": "/aws/lambda/checkout", "log_stream": "s2"},
+    {"timestamp": "2026-05-01T12:05:00Z", "message": "INFO health check ok", "log_group": "/aws/lambda/checkout", "log_stream": "s2"}
+  ]
+}
