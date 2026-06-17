@@ -1,0 +1,23 @@
+{
+  "name": "pool_exhaustion",
+  "service": "/eval/orders",
+  "root_cause_template": "ERROR connection pool exhausted waiting for <DUR>",
+  "baseline": [
+    {"message": "INFO worker started"},
+    {"message": "INFO processed order id=o100 in 30ms"},
+    {"message": "INFO processed order id=o101 in 28ms"},
+    {"message": "DEBUG cache hit for key=sku-44"},
+    {"message": "INFO processed order id=o102 in 35ms"},
+    {"message": "INFO worker heartbeat"},
+    {"message": "DEBUG cache hit for key=sku-91"}
+  ],
+  "incident": [
+    {"message": "INFO worker heartbeat"},
+    {"message": "INFO processed order id=o200 in 41ms"},
+    {"message": "ERROR connection pool exhausted waiting for 5000ms"},
+    {"message": "ERROR connection pool exhausted waiting for 5000ms"},
+    {"message": "ERROR connection pool exhausted waiting for 5000ms"},
+    {"message": "DEBUG cache hit for key=sku-12"},
+    {"message": "WARN retrying order id=o201 attempt 2"}
+  ]
+}

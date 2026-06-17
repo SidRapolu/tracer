@@ -1,0 +1,26 @@
+{
+  "name": "quiet_timeout_amid_noise",
+  "service": "/eval/gateway",
+  "root_cause_template": "ERROR upstream timeout calling auth-service after <DUR>",
+  "_note": "Hard case: the true cause appears only twice, while a benign deprecation WARN floods the window. Tests that novelty+severity beat raw volume.",
+  "baseline": [
+    {"message": "INFO route /health 200 in 5ms"},
+    {"message": "INFO route /login 200 in 60ms"},
+    {"message": "INFO route /health 200 in 4ms"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "INFO route /login 200 in 58ms"},
+    {"message": "INFO route /health 200 in 6ms"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"}
+  ],
+  "incident": [
+    {"message": "INFO route /health 200 in 5ms"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "WARN deprecated header X-Legacy-Token seen"},
+    {"message": "ERROR upstream timeout calling auth-service after 3000ms"},
+    {"message": "ERROR upstream timeout calling auth-service after 3000ms"},
+    {"message": "INFO route /health 200 in 5ms"}
+  ]
+}

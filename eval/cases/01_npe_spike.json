@@ -1,0 +1,24 @@
+{
+  "name": "npe_spike",
+  "service": "/eval/checkout",
+  "root_cause_template": "ERROR NullPointerException at PaymentProcessor.charge line <N>",
+  "baseline": [
+    {"message": "INFO health check ok"},
+    {"message": "INFO health check ok"},
+    {"message": "INFO request id=a91 completed in 42ms"},
+    {"message": "INFO request id=b12 completed in 38ms"},
+    {"message": "WARN slow query took 812ms on orders"},
+    {"message": "INFO health check ok"},
+    {"message": "INFO request id=c30 completed in 51ms"}
+  ],
+  "incident": [
+    {"message": "INFO health check ok"},
+    {"message": "INFO request id=d01 completed in 44ms"},
+    {"message": "ERROR NullPointerException at PaymentProcessor.charge line 88"},
+    {"message": "ERROR NullPointerException at PaymentProcessor.charge line 88"},
+    {"message": "ERROR NullPointerException at PaymentProcessor.charge line 88"},
+    {"message": "ERROR NullPointerException at PaymentProcessor.charge line 88"},
+    {"message": "WARN slow query took 870ms on orders"},
+    {"message": "INFO health check ok"}
+  ]
+}
