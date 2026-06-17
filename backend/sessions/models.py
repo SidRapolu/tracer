@@ -1,3 +1,4 @@
+# The smallest set of functions the pipeline needs to open a session, set its status, and persist ranked analyses.
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -11,6 +12,7 @@ import psycopg
 class Session:
     id: int
     service: str
+    kind: str
     window_start: datetime
     window_end: datetime
     status: str
@@ -22,15 +24,16 @@ def create_session(
     service: str,
     window_start: datetime,
     window_end: datetime,
+    kind: str = "incident",
 ) -> int:
     with conn.cursor() as cur:
         cur.execute(
             """
-            INSERT INTO sessions (service, window_start, window_end, status)
-            VALUES (%s, %s, %s, 'running')
+            INSERT INTO sessions (service, kind, window_start, window_end, status)
+            VALUES (%s, %s, %s, %s, 'running')
             RETURNING id
             """,
-            (service, window_start, window_end),
+            (service, kind, window_start, window_end),
         )
         return cur.fetchone()[0]
 
@@ -51,7 +54,7 @@ def get_session(conn: psycopg.Connection, session_id: int) -> Optional[Session]:
     with conn.cursor() as cur:
         cur.execute(
             """
-            SELECT id, service, window_start, window_end, status, created_at
+            SELECT id, service, kind, window_start, window_end, status, created_at
             FROM sessions WHERE id = %s
             """,
             (session_id,),

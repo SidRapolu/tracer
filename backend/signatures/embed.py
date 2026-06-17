@@ -7,10 +7,8 @@ from typing import Any
 MODEL_ID = "amazon.titan-embed-text-v2:0"
 DIMENSIONS = 1024
 
-
+# Embeds text via Bedrock Titan. The bedrock-runtime client is injected.
 class TitanEmbedder:
-    # Embeds text via Bedrock Titan. The bedrock-runtime client is injected.
-
     def __init__(self, client: Any, model_id: str = MODEL_ID) -> None:
         self._client = client
         self._model_id = model_id

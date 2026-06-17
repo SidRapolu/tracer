@@ -19,16 +19,14 @@ _RULES: list[tuple[re.Pattern[str], str]] = [
     (re.compile(r"\b\d+(?:\.\d+)?\b"), "<N>"),
 ]
 
-
+# Return the stable template for a raw log line.
 def normalize(message: str) -> str:
-    # Return the stable template for a raw log line.
     text = message.strip()
     for pattern, replacement in _RULES:
         text = pattern.sub(replacement, text)
     # Collapse whitespace so spacing differences don't fork the template.
     return re.sub(r"\s+", " ", text).strip()
 
-
+# Stable short hash of a template, used as the exact-match key.
 def fingerprint(template: str) -> str:
-    # Stable short hash of a template, used as the exact-match key.
     return hashlib.sha256(template.encode("utf-8")).hexdigest()[:16]
