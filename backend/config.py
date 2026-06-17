@@ -46,3 +46,11 @@ def build_embedder(config: Config):
     from signatures.embed import TitanEmbedder
 
     return TitanEmbedder(boto3.client("bedrock-runtime", region_name=config.aws_region))
+
+
+def build_verdict_generator(config: Config):
+    import boto3
+
+    from verdicts.generate import VerdictGenerator
+
+    return VerdictGenerator(boto3.client("bedrock-runtime", region_name=config.aws_region))

@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS signature_occurrences (
     signature_id  BIGINT      NOT NULL REFERENCES signatures (id) ON DELETE CASCADE,
     session_id    BIGINT      NOT NULL REFERENCES sessions (id) ON DELETE CASCADE,
     count         INTEGER     NOT NULL DEFAULT 0,
+    sample_lines  JSONB       NOT NULL DEFAULT '[]',
     UNIQUE (signature_id, session_id)
 );
 
