@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS sessions (
 CREATE INDEX IF NOT EXISTS idx_sessions_service ON sessions (service);
 
 -- A normalized log-line template, keyed per service. 
+CREATE TABLE IF NOT EXISTS signatures (
     id            BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     service       TEXT        NOT NULL,
     fingerprint   TEXT        NOT NULL,
