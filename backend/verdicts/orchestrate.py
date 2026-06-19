@@ -72,3 +72,51 @@ def generate_verdicts(
             }
         )
     return results
+
+
+# Generate (or return a cached) verdict for exactly one ranked candidate. If a
+# verdict was already persisted for that row, it's returned without a model
+# call — so expanding a candidate in the UI spends at most one Claude call,
+# once.
+def generate_verdict_for_rank(
+    conn: psycopg.Connection,
+    generator: VerdictGenerator,
+    session_id: int,
+    rank: int,
+) -> dict | None:
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT a.id, a.rank, a.composite_score, a.verdict_line,
+                   a.hypothesis, a.next_step, s.template, o.count, o.sample_lines
+            FROM analyses a
+            JOIN signatures s ON s.id = a.signature_id
+            JOIN signature_occurrences o
+              ON o.signature_id = a.signature_id AND o.session_id = a.session_id
+            WHERE a.session_id = %s AND a.rank = %s
+            """,
+            (session_id, rank),)
+        row = cur.fetchone()
+    if row is None:
+        return None
+
+    (analysis_id, rank, composite, v_line, hypothesis, next_step,
+     template, count, sample_lines) = row
+
+    if v_line is None:
+        verdict = generator.generate({
+            "template": template,
+            "incident_count": count,
+            "composite": composite,
+            "sample_lines": sample_lines,
+        })
+        _save_verdict(conn, analysis_id, verdict)
+        v_line, hypothesis, next_step = verdict.verdict_line, verdict.hypothesis, verdict.next_step
+
+    return {
+        "rank": rank,
+        "template": template,
+        "verdict_line": v_line,
+        "hypothesis": hypothesis,
+        "next_step": next_step,
+    }
