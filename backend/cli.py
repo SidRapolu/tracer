@@ -78,8 +78,17 @@ def cmd_analyze(args: argparse.Namespace) -> int:
 
     init_schema()
     with connect() as conn:
+        is_baseline = args.kind == "baseline"
         session_id = create_session(conn, args.service, start, end, kind=args.kind)
-        summary = ingest_signatures(conn, embedder, args.service, session_id, events)
+        summary = ingest_signatures(
+            conn, embedder, args.service, session_id, events,
+            skip_high_severity=is_baseline,
+        )
+
+        if is_baseline:
+            from ranking.baseline import prune_baseline_sessions
+
+            prune_baseline_sessions(conn, args.service)
 
         candidates = []
         verdicts = []

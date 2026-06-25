@@ -7,8 +7,15 @@ import psycopg
 from pgvector.psycopg import register_vector
 
 from ingestion.source import LogEvent
+from ranking.score import severity_score
 from signatures.embed import TitanEmbedder
 from signatures.normalize import fingerprint, normalize
+
+# Signatures scoring at or above this severity are errors, not normal traffic.
+# When learning a baseline, they're dropped so a burst that lands in a sampled
+# "normal" window can't teach the baseline that errors are normal. WARN and
+# below (e.g. slow-query warnings) stay — they're legitimate background noise.
+_BASELINE_SEVERITY_CUTOFF = 0.85
 
 
 def _get_signature_id(
@@ -71,20 +78,17 @@ def _record_occurrence(
             (signature_id, session_id, count, json.dumps(sample_lines)),
         )
 
-
+# Process a window of events into signatures + occurrences for one session.
+# Returns a small summary: distinct signatures stored, how many were novel
+# (and therefore embedded), and how many were skipped as too severe.
 def ingest_signatures(
     conn: psycopg.Connection,
     embedder: TitanEmbedder,
     service: str,
     session_id: int,
     events: list[LogEvent],
+    skip_high_severity: bool = False,
 ) -> dict[str, int]:
-    """
-    Process a window of events into signatures + occurrences for one session.
-
-    Returns a small summary: how many distinct signatures were seen, and how
-    many were novel (and therefore embedded).
-    """
     register_vector(conn)
 
     counts: Counter[str] = Counter()
@@ -104,7 +108,11 @@ def ingest_signatures(
             samples.setdefault(fp, []).append(" | ".join(window))
 
     novel = 0
+    skipped = 0
     for fp, count in counts.items():
+        if skip_high_severity and severity_score(templates[fp]) >= _BASELINE_SEVERITY_CUTOFF:
+            skipped += 1
+            continue
         signature_id = _get_signature_id(conn, service, fp)
         if signature_id is None:
             embedding = embedder.embed(templates[fp])
@@ -112,4 +120,4 @@ def ingest_signatures(
             novel += 1
         _record_occurrence(conn, signature_id, session_id, count, samples.get(fp, []))
 
-    return {"distinct": len(counts), "novel": novel}
+    return {"distinct": len(counts) - skipped, "novel": novel, "skipped": skipped}

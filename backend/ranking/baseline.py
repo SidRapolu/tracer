@@ -4,8 +4,31 @@ from dataclasses import dataclass
 
 import psycopg
 
-#A signature absent from every baseline session has no
-#history — that is the exact-match novelty signal.
+# Keep only the most recent N baseline sessions per service. The baseline is a
+# rolling window of recent normal, so it adapts as the service changes rather
+# than counting stale observations forever. (Decay would be the next
+# refinement; a hard cap is the simplest thing that's correct.)
+MAX_BASELINE_SESSIONS = 5
+
+
+# Drop baseline sessions beyond the most recent MAX_BASELINE_SESSIONS for a
+# service. Occurrence rows cascade-delete with the session.
+def prune_baseline_sessions(conn: psycopg.Connection, service: str) -> int:
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            DELETE FROM sessions
+            WHERE service = %s AND kind = 'baseline'
+              AND id NOT IN (
+                  SELECT id FROM sessions
+                  WHERE service = %s AND kind = 'baseline'
+                  ORDER BY created_at DESC
+                  LIMIT %s
+              )
+            """,
+            (service, service, MAX_BASELINE_SESSIONS),
+        )
+        return cur.rowcount
 
 # Historical view of one signature across baseline sessions.
 @dataclass
@@ -22,6 +45,7 @@ def baseline_session_count(conn: psycopg.Connection, service: str) -> int:
             (service,),
         )
         return cur.fetchone()[0]
+
 
 # For each signature id, its occurrence stats across baseline sessions.
 # Signatures never seen in a baseline session get avg_count 0.
